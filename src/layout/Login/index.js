@@ -1,11 +1,12 @@
 import { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { StyledHomeWrapper, StyledContent } from "./styled";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import { StyledHomeWrapper, StyledContent } from "./styled";
 import { Context } from "../../GlobalContext";
 import Logo from "../../components/Logo";
 import Field from "../../components/Field";
-import axios from "axios";
+
 
 /*
   - O layout (página) Login pretende permitir ao usuário o preenchimento

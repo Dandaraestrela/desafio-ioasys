@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom';
+import { useContext } from "react";
 import {
   StyledHeaderWrapper,
   StyledHeaderAction,
   StyledButton,
   StyledShape,
 } from "./styled";
+import { Context } from "../../GlobalContext";
 import Logo from "../Logo";
 import Shape from "../../assets/Log Out.png";
-import { Link } from 'react-router-dom';
-import { useContext } from "react";
-import { Context } from "../../GlobalContext";
+
 
 /*
   - O componente Header pretende exibir a logomarca da empresa, assim como

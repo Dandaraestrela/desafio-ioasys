@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   StyledCardWrapper,
   StyledImage,
@@ -8,7 +9,6 @@ import {
   StyledSecondaryInfoContainer,
   StyledInfo,
 } from "./styled";
-import { useState } from "react";
 import Dialog from "../../components/Dialog";
 
 /*

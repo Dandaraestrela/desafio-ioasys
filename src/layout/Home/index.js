@@ -1,11 +1,10 @@
+import { useContext, useState, useEffect } from "react";
+import axios from "axios";
 import { StyledHomeWrapper, StyledList, StyledLoading } from "./styled";
+import { Context } from "../../GlobalContext";
 import Header from "../../components/Header";
 import Card from "../../components/Card";
 import Pagination from "../../components/Pagination";
-
-import { useContext, useState, useEffect } from "react";
-import axios from "axios";
-import { Context } from "../../GlobalContext";
 import DualBall from "../../assets/DualBall-2s-200px.gif";
 
 /*
@@ -75,7 +74,7 @@ export const Home = () => {
   }, [currentPage]);
 
   return (
-    <StyledHomeWrapper isFirstLoading={isFirstLoading}>
+    <StyledHomeWrapper >
       <Header name={user.name}></Header>
       {isFirstLoading && (
         <StyledLoading

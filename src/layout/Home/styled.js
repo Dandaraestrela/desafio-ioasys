@@ -4,16 +4,17 @@ import Background from "../../assets/1stBackground.png";
 export const StyledHomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1%;
   align-items: center;
-  width: ${props => (props.isFirstLoading) ? "100vw" : "100%"};
-  height: ${props => (props.isFirstLoading) ? "100vw" : "100%"};
+  width: 100%;
+  min-height: 100vh;
   background-image: url(${Background});
   background-size: cover;
   padding: 2% 4%;
 `;
 
 export const StyledList = styled.div`
-  width: 100%;
+  width: 90%;
   height: 80%;
   margin-top: 40px;
   display: flex;
