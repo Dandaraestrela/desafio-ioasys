@@ -9,7 +9,7 @@ export const StyledPaginationWrapper = styled.div`
   margin-top: 16px;
   @media (max-width: 600px) {
     justify-content: center;
-  };
+  } ;
 `;
 
 export const StyledNumberPages = styled.h3`
@@ -44,10 +44,11 @@ export const StyledArrowLeft = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: ${(props) => props.first === true ? "rgba(51, 51, 51, 0.4)" : " #333333"};
+  color: ${(props) =>
+    props.first === true ? "rgba(51, 51, 51, 0.4)" : " #333333"};
   @media (max-width: 600px) {
     display: none;
-  };
+  } ;
 `;
 
 export const StyledArrowLeftResponsive = styled(StyledArrowLeft)`
@@ -55,7 +56,7 @@ export const StyledArrowLeftResponsive = styled(StyledArrowLeft)`
   @media (max-width: 600px) {
     display: flex;
     margin-left: 0px;
-  };
+  } ;
 `;
 
 export const StyledArrowRight = styled.button`
@@ -71,7 +72,7 @@ export const StyledArrowRight = styled.button`
   cursor: pointer;
   color: ${(props) =>
     props.last === true ? "rgba(51, 51, 51, 0.4)" : " #333333"};
-    @media (max-width: 600px) {
+  @media (max-width: 600px) {
     margin-left: 16px;
-  };
+  } ;
 `;

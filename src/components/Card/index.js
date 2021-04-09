@@ -11,6 +11,13 @@ import {
 import { useState } from "react";
 import Dialog from "../../components/Dialog";
 
+/*
+  - O componente Card pretende exibir as informações principais de determinado
+  - livro listado na interface, além disso, recebe todas as propriedades deste livro
+  - de forma que quando for acionada a chamada do modal (através do componente Card)
+  - o modal possa receber todas as propriedades necessárias.
+*/
+
 export const Card = (props) => {
   const [showDialog, setShowDialog] = useState(false);
 

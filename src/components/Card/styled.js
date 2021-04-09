@@ -32,25 +32,24 @@ export const StyledInfoContainer = styled.div`
   margin-left: 8px;
   width: 100%;
   overflow-y: auto;
-  ::-webkit-scrollbar{
-    background-color: #F4F4F4;
+  ::-webkit-scrollbar {
+    background-color: #f4f4f4;
     width: 4px;
-    border-radius:4px;
+    border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb {
     background: #dad7d7;
-    border-radius:4px;
-}
+    border-radius: 4px;
+  }
 `;
 
 export const StyledPrincipalInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-
 `;
 
 export const StyledTitle = styled.h1`
-display: flex;
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -60,7 +59,7 @@ display: flex;
 `;
 
 export const StyledAuthor = styled.h2`
-display: flex;
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -74,11 +73,10 @@ export const StyledSecondaryInfoContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 100%;
-
 `;
 
 export const StyledInfo = styled.h3`
-display: flex;
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;

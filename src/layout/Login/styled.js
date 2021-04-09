@@ -11,7 +11,7 @@ export const StyledHomeWrapper = styled.div`
   background-size: cover;
   @media (max-width: 600px) {
     background-size: fit;
-  };
+  } ;
 `;
 
 export const StyledContent = styled.div`
@@ -21,6 +21,5 @@ export const StyledContent = styled.div`
   @media (max-width: 600px) {
     margin-left: 0px;
     align-self: center;
-  };
+  } ;
 `;
-

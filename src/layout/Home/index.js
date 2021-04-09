@@ -8,6 +8,13 @@ import axios from "axios";
 import { Context } from "../../GlobalContext";
 import DualBall from "../../assets/DualBall-2s-200px.gif";
 
+/*
+  - O layout (página) Home, pretende exibir a listagem de livros cadastrados
+  - no sistema, assim como indicar o usuário logado, permitir sua saída do sistema
+  - e exibir modal com mais informações de livros selecionados pelo usuário.
+  - Este componente deve receber a autorização da api para permitir a listagem dos livros.
+*/
+
 export const Home = () => {
   const [bookResults, setBookResults] = useState([]);
   const [firstPage, setFirstPage] = useState(true);
@@ -68,9 +75,14 @@ export const Home = () => {
   }, [currentPage]);
 
   return (
-    <StyledHomeWrapper>
+    <StyledHomeWrapper isFirstLoading={isFirstLoading}>
       <Header name={user.name}></Header>
-      {isFirstLoading && <StyledLoading src={DualBall}/>}
+      {isFirstLoading && (
+        <StyledLoading
+          src={DualBall}
+          alt={"Animação de carregamento de página"}
+        />
+      )}
       <StyledList>
         {bookResults?.map((book) => {
           return (

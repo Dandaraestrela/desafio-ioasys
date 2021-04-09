@@ -19,7 +19,7 @@ export const StyledSpan = styled.span`
   ::after {
     content: " ";
     position: absolute;
-    bottom: 100%; 
+    bottom: 100%;
     left: 8%;
     margin-left: -8px;
     border-width: 8px;

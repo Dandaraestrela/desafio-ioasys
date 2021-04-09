@@ -65,7 +65,7 @@ export const StyledFieldPassword = styled.div`
   justify-content: space-between;
   align-items: center;
   input {
-      width: 90%;
+    width: 90%;
     margin: none;
     border: none;
     background: none;

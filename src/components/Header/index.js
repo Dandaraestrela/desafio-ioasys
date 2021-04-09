@@ -10,6 +10,11 @@ import { Link } from 'react-router-dom';
 import { useContext } from "react";
 import { Context } from "../../GlobalContext";
 
+/*
+  - O componente Header pretende exibir a logomarca da empresa, assim como
+  - o nome do usuário que acessou o sistema e permitir a saída do sistema.
+*/
+
 export const Header = (props) => {
   const [user, setUser] = useContext(Context);
   const userExit = () =>{

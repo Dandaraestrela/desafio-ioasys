@@ -1,11 +1,17 @@
 import { useContext, useState } from "react";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 import { StyledHomeWrapper, StyledContent } from "./styled";
 import { useForm } from "react-hook-form";
 import { Context } from "../../GlobalContext";
 import Logo from "../../components/Logo";
 import Field from "../../components/Field";
 import axios from "axios";
+
+/*
+  - O layout (página) Login pretende permitir ao usuário o preenchimento
+  - de dados e acesso ao sistema. Este componente deve tentar se conectar à API
+  - enviando os dados preenchidos pelo usuário e indicando o sucesso ou erro da ação.
+*/
 
 export const Login = () => {
   const { register, handleSubmit } = useForm();
@@ -29,7 +35,7 @@ export const Login = () => {
         history.push("/home");
       })
       .catch((error) => {
-        // envia na props do field que deve exibir modal com erro
+        /* envia na props do field que deve exibir modal com erro */
         setError(true);
       });
   };

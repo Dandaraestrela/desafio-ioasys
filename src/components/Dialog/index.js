@@ -14,8 +14,13 @@ import {
   StyledInfo,
 } from "./styled";
 import { BsX } from "react-icons/bs";
-import Book from "../../assets/Book.png";
 import Quotes from "../../assets/Quotes.png";
+
+/*
+  - O componente Dialog pretende exibir, através do clique em determinado componente
+  - Card todas as informações de determinado livro selecionado, recebendo como
+  - propriedades todas as informações deste livro, exibindo-as em um modal.
+*/
 
 export const Dialog = (props) => {
   return (
@@ -69,7 +74,7 @@ export const Dialog = (props) => {
           </StyledSecondaryInfoContainer>
 
           <StyledTertiaryInfoContainer>
-              <h3>RESENHA DA EDITORA</h3>
+            <h3>RESENHA DA EDITORA</h3>
 
             <p>
               <img

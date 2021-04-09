@@ -31,13 +31,13 @@ export const StyledHeaderAction = styled.div`
     color: #333333;
   }
   @media (max-width: 600px) {
-    h2{
+    h2 {
       display: none;
     }
-    h3{
+    h3 {
       display: none;
     }
-  };
+  } ;
 `;
 
 export const StyledButton = styled.button`
@@ -58,4 +58,3 @@ export const StyledShape = styled.img`
   width: auto;
   height: auto;
 `;
-

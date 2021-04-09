@@ -78,6 +78,8 @@ export const StyledImage = styled.img`
   @media (max-width: 600px) {
     width: 240px;
     height: 351px;
+  }
+  @media (max-width: 900px) {
     margin-bottom: 24px;
   }
 `;
