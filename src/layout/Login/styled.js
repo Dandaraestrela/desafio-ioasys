@@ -11,6 +11,7 @@ export const StyledHomeWrapper = styled.div`
   background-size: cover;
   @media (max-width: 600px) {
     background-size: fit;
+    background-position: center;
   } ;
 `;
 

@@ -5,8 +5,6 @@ export const StyledCardWrapper = styled.div`
   flex-direction: row;
   width: 272px;
   height: 160px;
-  left: 115px;
-  top: 120px;
   background: #ffffff;
   box-shadow: 0px 6px 24px rgba(84, 16, 95, 0.13);
   border-radius: 4px;
