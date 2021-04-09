@@ -15,6 +15,7 @@ export const Home = () => {
   const [pageQuantity, setPageQuantity] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [isFirstLoading, setIsFirstLoading] = useState(true);
 
   const [user, setUser] = useContext(Context);
 
@@ -59,6 +60,7 @@ export const Home = () => {
         setPageQuantity(Math.ceil(response.data.totalPages));
         isFirst();
         setBookResults(response.data.data);
+        setIsFirstLoading(false);
       })
       .catch((error) => {
         console.log(error.response.data.errors.message);
@@ -68,7 +70,7 @@ export const Home = () => {
   return (
     <StyledHomeWrapper>
       <Header name={user.name}></Header>
-      {loading && <StyledLoading src={DualBall} />}
+      {isFirstLoading && <StyledLoading src={DualBall}/>}
       <StyledList>
         {bookResults?.map((book) => {
           return (
@@ -94,6 +96,7 @@ export const Home = () => {
         pageQuantity={pageQuantity}
         handleBack={handleBack}
         handleNext={handleNext}
+        loading={loading}
       ></Pagination>
     </StyledHomeWrapper>
   );
