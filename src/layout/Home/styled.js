@@ -4,7 +4,7 @@ import Background from "../../assets/1stBackground.png";
 export const StyledHomeWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1%;
+  flex: 1;
   align-items: center;
   width: 100%;
   min-height: 100vh;
